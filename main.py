@@ -15,7 +15,6 @@ def get_email_client() -> object:
     Get email client
     :return: email client to send email
     """
-    print(setting.EMAIL)
     server = smtplib.SMTP(
         setting.EMAIL['host'], setting.EMAIL['port']
     )
