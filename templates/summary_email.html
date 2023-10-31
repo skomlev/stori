@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tu título aquí</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        table {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-collapse: collapse;
+            border: 0.5px solid #ccc;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 10px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td align="center">
+            <a href="https://www.storicard.com/">
+                <img src="https://pbs.twimg.com/profile_images/1714696693235503104/2s14kyLp_400x400.jpg"
+                     alt="Logo" width="300" height="100">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>
+                Hello Pablo, this is the result of the test challenge
+                sent to <a href="skomlev.com" style="text-decoration: none; color: #0074e4;">Serguei Komlev</a> last week.
+            </p>
+            <p>To see the complete code you can see it from <a href="https://github.com/skomlev/stori" style="text-decoration: none; color: #0074e4;">GITHUB</a>.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td align="right">Total balance is</td>
+                    <td align="left">$ {{'%0.2f' % total_balance|float}}</td>
+                </tr>
+                <tr>
+                    <td align="right">Average debit amount</td>
+                    <td align="left">$ {{'%0.2f' % average_debit_amount|float}}</td>
+                </tr>
+                <tr>
+                    <td align="right">Average credit amount</td>
+                    <td align="left">$ {{'%0.2f' % average_credit_amount|float}}</td>
+                </tr>
+
+                {% for key, value in number_of_transactions_group_by_month.items() %}
+                <tr>
+                    <td align="right">Number of transactions in {{ key }} </td>
+                    <td align="center" >{{value}}</td>
+
+                </tr>
+                {% endfor %}
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="text-align: center; font-size: 12px; color: #999;">
+                &copy; 2023 <a href="https://www.storicard.com/" style="text-decoration: none; color: #0074e4;">StoryCard</a>. All rights reserved.
+            </p>
+        </td>
+    </tr>
+</table>
+</body>
