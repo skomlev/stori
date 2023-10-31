@@ -1,5 +1,5 @@
 # Stori Challenge.
-Full specification of the challenge can be found [here]([Tech_Challenge_-_Software_Engineer-1.pdf](doc%2FTech_Challenge_-_Software_Engineer-1.pdf))
+Full specification of the challenge can be found [here](doc/Tech_Challenge_-_Software_Engineer-1.pdf)
 
 ## Getting Started
 
